@@ -1,13 +1,6 @@
 /* TradeWise Legal: extra styles for homepage-draft.html only.
    Loaded after style.css. Nothing here changes the live pages. */
 
-/* ---------- review markers ---------- */
-.draftbar { background: #fff3c4; color: #5c4400; font-size: .82rem; line-height: 1.4; padding: 8px 0; border-bottom: 1px solid #ecd27a; }
-.ph {
-  background: #fff3c4; color: #5c4400; border: 1px dashed #c99a00; border-radius: 4px;
-  padding: 0 .35em; font-weight: 600; font-style: normal; -webkit-box-decoration-break: clone; box-decoration-break: clone;
-}
-
 /* ---------- small shared bits ---------- */
 .fine { font-size: .82rem; line-height: 1.5; color: var(--muted); margin-top: 16px; max-width: 52em; }
 .section--navy .fine, .cta .fine, .support .fine, .hm .fine { color: rgba(255, 255, 255, .62); }
@@ -23,7 +16,6 @@ a.inline { color: var(--navy); font-weight: 700; border-bottom: 2px solid var(--
 .hm__who { display: flex; align-items: center; gap: 12px; margin-top: 28px; font-size: .9rem; line-height: 1.45; color: rgba(255, 255, 255, .78); }
 .hm__who img { width: 50px; height: 50px; flex: none; border-radius: 50%; object-fit: cover; object-position: 50% 22%; border: 2px solid var(--orange); }
 .hm__who b { color: #fff; }
-.hm__who .ph { white-space: nowrap; }
 .hm--offer .hm__copy { padding-bottom: 56px; }
 
 /* ---------- pain ---------- */
@@ -77,6 +69,27 @@ a.inline { color: var(--navy); font-weight: 700; border-bottom: 2px solid var(--
 .tq__item { margin: 0; padding: 24px 22px; border: 1px solid var(--line-navy); border-radius: var(--r-lg); background: rgba(255, 255, 255, .04); }
 .tq__item blockquote { margin: 0; font: 500 1.05rem/1.5 var(--sans); color: #fff; }
 .tq__item figcaption { margin-top: 14px; font-size: .88rem; color: rgba(255, 255, 255, .7); }
+
+/* ---------- reviews ---------- */
+.tq__stars { margin-bottom: 12px; font-size: 1.05rem; letter-spacing: .12em; color: var(--orange); }
+.tq__item { display: flex; flex-direction: column; }
+.tq__item figcaption { margin-top: auto; padding-top: 16px; }
+.tq__item figcaption b { display: block; font-size: .98rem; color: #fff; }
+
+/* ---------- monthly support perks ---------- */
+.perks { display: grid; gap: 16px; margin-bottom: 24px; }
+.perks li { display: flex; gap: 14px; align-items: flex-start; }
+.perks .num { flex: none; width: 2.2em; padding-top: 3px; color: #ffb48f; }
+.perks b { display: block; font-size: 1rem; color: #fff; }
+.perks p { margin-top: 2px; font-size: .92rem; line-height: 1.45; color: rgba(255, 255, 255, .72); }
+
+/* ---------- form confirmations ---------- */
+.done { display: flex; gap: 12px; align-items: flex-start; margin-top: 16px; padding: 16px 18px; background: var(--cream); border-radius: 10px; color: var(--ink); }
+.done .ico { width: 24px; height: 24px; color: var(--orange); flex: none; }
+.done b { display: block; color: var(--navy); }
+.bk__done > .ico { width: 44px; height: 44px; margin-bottom: 12px; color: var(--orange); }
+.bk__done-note { margin-top: 14px; color: var(--muted); }
+.bk__done-note a { color: var(--navy); font-weight: 700; border-bottom: 2px solid var(--orange); }
 
 /* ---------- packages: featured card ---------- */
 .pk__card--feature { border: 2px solid var(--orange); box-shadow: var(--shadow); }
